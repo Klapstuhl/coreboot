@@ -1,0 +1,6 @@
+Category: desktop
+Board URL: https://ark.intel.com/content/www/de/de/ark/products/60637/intel-server-board-s1200kp.html
+ROM package: SOIC-8
+ROM protocol: SPI
+ROM socketed: n
+Flashrom support: n

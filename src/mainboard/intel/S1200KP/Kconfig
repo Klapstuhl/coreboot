@@ -1,0 +1,33 @@
+if BOARD_INTEL_S1200KP
+
+config BOARD_SPECIFIC_OPTIONS
+	def_bool y
+	select BOARD_ROMSIZE_KB_4096
+	select HAVE_ACPI_RESUME
+	select HAVE_ACPI_TABLES
+	select INTEL_INT15
+	select MAINBOARD_HAS_LIBGFXINIT
+	select NORTHBRIDGE_INTEL_SANDYBRIDGE
+	select SERIRQ_CONTINUOUS_MODE
+	select SOUTHBRIDGE_INTEL_BD82X6X
+	select USE_NATIVE_RAMINIT
+	select HAVE_OPTION_TABLE
+	select HAVE_CMOS_DEFAULT
+	select MAINBOARD_USES_IFD_GBE_REGION
+	
+config MAINBOARD_DIR
+	string
+	default "intel/S1200KP"
+
+config MAINBOARD_PART_NUMBER
+	string
+	default "S1200KP"
+
+#config DRAM_RESET_GATE_GPIO # FIXME: check this
+#	int
+#	default 60
+
+config USBDEBUG_HCD_INDEX
+	int
+	default 2
+endif
